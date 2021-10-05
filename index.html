@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página oficial PlayStation®: Consoles, Jogos, Acessórios e mais</title>
+
+    <!-- Bootstrap Icon-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+
+    <!-- ReactJS -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+     <!-- <div className="banner4">
+        <div className="container justify-content-center  text-center">
+        <div className="title1 text-primary ">Jogar não tem Limetes</div>
+        <div>
+            <h2 className="title2 ">Apresentamos o PlayStation 5 </h2>
+        </div>
+        <p className="description text-secondary ">Libere novas possibilidades de jogos que você nunca imaginou</p>
+        </div>
+
+        <div className="container">
+            <div className="row d-flex align-items-center">
+                <div className="col-6">
+                    <h3>Console PlayStation 5</h3>
+                    <p className="text-secondary">Descubra uma nova geração de jogos incríveis de PlayStation.</p>
+                    <div>
+                    <button type="button" class="btn btn-primary">Saiba Mais</button>
+                </div>
+                </div>
+                
+                <div className="col-6" >
+                    <img  className="im" src="https://gmedia.playstation.com/is/image/SIEPDC/playstation-5-horizontal-product-shot-01-ps5-en-23nov20?$1200px--t$" alt=" Console"/>
+                    
+                </div>
+                
+            </div>
+        </div>  
+     
+     </div>
+    -->
+    <script type="text/babel">
+        function Header() {
+            return (
+                <div>
+                    <div className="container-fluid bg-black d-flex justify-content-end">
+                        <img src="https://aliancageek.files.wordpress.com/2018/06/symbol-sony.jpg" className="logo"/>
+                    </div>
+                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                        <div className="container-fluid">
+                            <a className="navbar-brand" href="#"><img id="logo_playstation" src="https://i.pinimg.com/originals/6b/29/c6/6b29c65d5c07bc3efa1db830151d753e.png" alt=""/></a>
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li className="nav-item">
+                                        <a className="nav-link active" aria-current="page" href="#">Jogos</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link active" href="#">Hardware</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link active" href="#">Serviços</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link active" href="#">Notícias</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link active" href="#">Loja</a>
+                                    </li>
+                                    <li className="nav-item dropdown active">
+                                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Suporte
+                                        </a>
+                                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><img src="./img/suporte.svg" /></li>
+                                            <li><a className="dropdown-item" href="#">Suporte</a></li>
+                                            <li><img src="./img/status.svg"/></li>
+                                            <li><a className="dropdown-item" href="#">Status da PNS</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form className="d-flex">
+                                    <button className="btn btn-dark">Iniciar sessão</button>
+                                    <i className="bi bi-search"></i>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            );
+        }
+
+        function Estemes() {
+            return (
+                <div className="bg-Estemes">
+                    <div className="container">
+                        <div>
+                            <div>
+                                <div>
+                                    <h1 className="text-white pt-4">ESTE MÊS</h1>
+                                    <h1 className="text-white"><b>NO PLAYSTATION ®️</b></h1>
+                                </div>
+                                <p className="text-white lead">
+                                    Confira os maiores lançamentos deste mês,<br /> além de recursos dedicados, guias e muito<br /> mais.
+                                </p>
+                                <div className="d-grid gap-1 d-md-block">
+                                    <button className="btn btn-primary bg-white text-black mb-4 btn-radius" type="button">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        <div className="row">
+                            <div className="col-4">
+                                <div className="card ajuste-card">
+                                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/great-ps4-games-enhanced-for-ps5-keyart-01-en-29sep21?$1600px$" className="card-img-top" alt="" />
+                                </div>
+                                <h5 className="text-white text-center"><b>Grandes jogos do PS4<br /> ganham vida no PS5</b></h5>
+                            </div>
+                            <div className="col-4">
+                                <div className="card ajuste-card">
+                                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/tmop-fifa-22-editorial-image-block-01-en-23aug21?$1600px--t$" className="card-img-top" alt="" />
+                                </div>
+                                <h5 className="text-white text-center"><b>Como FIFA 22 tira<br/> proveito dos recursos <br/>inovadores do PS5</b></h5>
+                            </div>
+                            <div className="col-4 mb-4">
+                                <div className="card ajuste-card">
+                                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/death-stranding-directors-cut-homepage-hero-desktop-01-ps5-29jun21$en?$1600px$" className="card-img-top" alt="" />
+                                </div>
+                                <h5 className="text-white text-center"><b>As novidades de DEATH<br/> STRANDING DIRECTOR'S<br/> CUT no PS5</b></h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        
+        function PlayStation5 () {
+            return(
+                <div className="banner4">
+                    <div className="container justify-content-center  text-center p-4">
+                    <div className="title1 text-primary ">Jogar não tem Limites</div>
+                    <div>
+                        <h2 className="title2 ">Apresentamos o PlayStation 5 </h2>
+                    </div>
+                    <p className="description text-secondary ">Libere novas possibilidades de jogos que você nunca imaginou</p>
+                    </div>
+
+                    <div className="container">
+                        <div className="row d-flex align-items-center">
+                            <div className="col-6">
+                                <h3>Console PlayStation 5</h3>
+                                <p className="text-secondary">Descubra uma nova geração de jogos incríveis de PlayStation.</p>
+                                <div>
+                                <button type="button" class="btn btn-primary">Saiba Mais</button>
+                            </div>
+                            </div>
+                            
+                            <div className="col-6" >
+                                <img  className="im" src="https://gmedia.playstation.com/is/image/SIEPDC/playstation-5-horizontal-product-shot-01-ps5-en-23nov20?$1200px--t$" alt=" Console"/>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>  
+                 
+                 </div>
+            )    
+        }
+
+        function Horizon() {
+            return(
+                <div>
+                    <section className="bg-horizon">
+            <div className="container">
+                <div className="col-6">
+                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-white-logo-01-ps5-en-02sep21?$1200px--t$" alt="logo" className="ajuste2 mb-4 mt-5 "/>
+                        <h1 className="text-white">Disponível em 18 de fevereiro de 2022</h1>
+                        <p className="text-white">Junte-se à Aloy para desbravar o Oeste Proibido, uma área majestosa e perigosa que esconde novas ameaças misteriosas.</p>
+                        <button className="btn btn-light m-4"><span>Explore a Franquia Horizon</span></button>
+                     <div id="butaoXd">
+                    </div>
+                 </div>   
+            </div>
+        </section>
+                </div>
+            );
+        }
+
+        function Lancamentos() {
+            return (
+                <div className="bg-dark text-white">
+                    <div class="container p-3">
+                        <h3>Novos lançamentos</h3>
+                        <p>Grandes jogos de PS5 e PS4 já disponíveis</p>
+                        <div className="row row_lancamentos">
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/deathloop-store-art-01-ps4-ps5-en-20nov20?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/tales-of-arise-store-art-01-ps4-10sep21$en?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/lost-in-random-store-art-01-ps4-09sep21$en?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/the-great-ace-attorney-chronicles-store-art-01-ps4-10jun21$en?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/ratchet-and-clank-rift-apart-store-art-01-31mar21$en?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-remake-intergrade-store-art-01-31mar21$en?$1200px$"/>
+                            </div>
+                        </div>
+                        <div className="row row_lancamentos">
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/returnal-square-art-01-ps5-en-16dec20?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/kena-bridge-of-spirits-store-art-01-31mar21$en?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/fist-forged-in-shadow-torch-store-art-01-ps4-25aug21$en?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/resident-evil-village-store-art-01-ps5-en-09dec20$en?$1200px$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://image.api.playstation.com/vulcan/ap/rnd/202108/0407/ThCSPvgkTREJGB2MDwa1qD6W.png?w=1200$"/>
+                            </div>
+                            <div className="col-2">
+                                <img className="card_lancamento" src="https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-tsushima-directors-cut-packshot-st-en-30jun21?$1200px$"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function Card(props) {
+        return ( 
+                <div className="card">
+                    <img src={props.image} className="card-img-top" alt={props.title} title={props.title} />
+                     <div className="card-body">
+                        <h5 className="card-title">{props.title}</h5>
+                        <p className="card-text">{props.text}</p>
+                        <a href="#" className="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            
+         
+        )
+      }
+
+      function Produtos() {
+        const Produtos = [
+          {
+            id: 1,
+            image: 'https://gmedia.playstation.com/is/image/SIEPDC/ps4-slim-homepage-image-block-04-en-09oct20?$1600px$',
+            title: 'PlayStation 4',
+            description: 'Os jogos mais incriveis estão no PS4, com 1TB de armazenamento'
+          },
+          {
+            id: 2,
+            image: 'https://gmedia.playstation.com/is/image/SIEPDC/double11-202010-tw-psvr?$1600px$',
+            title: 'PlayStation VR',
+            description: 'Mais de 500 jogos e experiências, e subindo. Conheça todos eles.'
+          },
+          {
+            id: 3,
+            image: 'https://gmedia.playstation.com/is/image/SIEPDC/dualshock-4-listing-thumb-01-ps4-en-12oct20?$1600px$',
+            title: 'Acessórios',
+            description: 'Aprimore sua experiência PS4 com vários acessórios oficiais.'
+          }
+        ]
+        return (
+          Produtos.map(
+            Produto_row =>(
+              <div className="col-4">
+                <Card title={Produto_row.title} image={Produto_row.image} text={Produto_row.description} />
+              </div>
+            )
+          )
+        )
+      }
+
+        function Plus(){
+        return(
+        <section className="cinza">
+            <div className="container">
+                <div className="d-flex">
+                    <div className="justify-content-center">
+                        <img src="./img/plus.png" alt="logo" className="ajuste2 mb-4 mt-5 "/>
+                        <p>Melhore sua experiência PlayStation com o modo multijogador online, jogos mensais, descontos exclusivos e muito mais.</p>
+                        <button className="btn btn-light m-4"><span>Explore o Playstation Plus</span></button>
+                    </div>
+                    <div>
+                        <img  id="butaoXd" src="./img/banner-plus.png" alt="banner-plus" className="ajuste"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        );
+    }
+
+    /* Section do card de promoção*/
+    function Section(){
+            return (
+                <div>
+                  <Texto />
+                  <Promo />
+                </div>
+            )
+        }
+
+      /*textos */ 
+      function Texto() {
+        return (
+          <div className="container text-center texto p-3">
+            <h2 className="display-6">Novas promoções na <br />
+              PlayStation™Store</h2>
+            <p>Descontos incríveis, curadoria de coletâneas e 
+            promoções <br />
+             sazonais para PS5, PS4 e PS VR, tudo em um só lugar.</p>
+          </div>
+        )
+      }
+        
+      /*Cards promoções */
+      function Promoçao(props) {
+        return (
+          <div className="border card my-3" id="promo">
+            <a href="#"><img src={"./img/" + props.image} className="card-img-top" alt={props.title} title={props.title} /></a>
+            <div className="card-body border">
+              <h5 className="card-title border">{props.title}</h5>
+              <p className="card-text border">{props.text}</p>
+            </div>
+          </div>
+        )
+      }
+      /*Imagem cards de promoções */
+      function Promo() {
+        const Promo = [
+          {
+            id: 1,
+            image: '70.jpg',
+          },
+          {
+            id: 2,
+            image: 'alldeals.jpg',
+          },
+          {
+            id: 3,
+            image: 'free.jpg',
+          }
+        ]
+        return (
+          Promo.map(
+            Promos_row =>(
+              <div className="col-4 d-inline-block mx-5 w-25">
+                <Promoçao title={Promos_row.title} image={Promos_row.image} />
+              </div>
+            )
+          )
+        )
+      }
+
+        function Social(){
+        return(
+        <section className="container">
+            <h2 className="text-center mb-3">Siga-nos nas redes sociais</h2>
+            <div>
+                <ul id="lista_social" className="d-flex">
+                    <div className="m-4">
+                        <li className="rede item_social">
+                            <a href="https://twitter.com/PlayStation_BR" alt="Twitter" target="_blanc">
+                            <img src="./img/twitter.jpg" alt="twitter" tittle="Twitter" />
+                            </a>
+                        </li>
+                    </div>
+                    <div className="m-4">
+                        <li className="rede item_social">
+                            <a href="https://www.facebook.com/PlayStationBR" alt="Facebook" target="_blanc">
+                            <img src="./img/facebook.jpg" alt="facebook" tittle="Facebook" />
+                            </a>
+                        </li>
+                    </div>
+                    <div className="m-4">
+                        <li className="rede item_social">
+                            <a href="https://www.instagram.com/playstation_br/" alt="Instagram" target="_blanc">
+                            <img src="./img/instagram.jpg" alt="instagram" tittle="Instagram" />
+                            </a>
+                        </li>
+                    </div>
+                    <div className="m-4">
+                        <li className="rede item_social">
+                            <a href="https://www.youtube.com/user/PlayStationBR" alt="Youtube" target="_blanc">
+                            <img src="./img/youtube.jpg" alt="youtube" tittle="Youtube" />
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        );
+    }
+
+        function Main(props) {
+            return (
+                <div>
+                    <Estemes />
+                    <PlayStation5 />
+                    <Horizon />
+                    <Lancamentos />
+                    <div className="container p-3">
+                            <h2 className="text-center">Explore o PlayStation®️4</h2>
+                            <p className="text-muted text-center">Jogos incríveis e diversão sem parar. Nunca houve época melhor para se divertir com o PS4.</p>
+                    <div className="row">
+                        <Produtos />
+                    </div>
+                     </div>
+                    <Plus />
+                    <Section />
+                    <Social />
+                </div>
+            )
+        }
+
+        function Footer() {
+            return (
+                <footer>
+                    <div className="container d-flex">
+                        <div className="footer_left">
+                            <img src="https://www.playstation.com/etc.clientlibs/global_pdc/clientlibs/clientlib-base/resources/ps-bug.svg" alt=""/>
+                            <p><i className="bi bi-globe"></i> Country / Region: Brazil</p>
+                            <img src="https://www.playstation.com/etc.clientlibs/global_pdc/clientlibs/clientlib-base/resources/sie.svg" alt=""/>
+                            <p>© 2021 Sony Interactive Entertainment LLC</p>
+                        </div>
+                        <div className="footer_right d-flex">
+                            <ul>
+                                <li>Suporte</li>
+                                <li>Política de privacidade</li>
+                                <li>Termos de serviço</li>
+                                <li>PlayStation Studios</li>
+                                <li>Sobre a SIE</li>
+                                <li>PlayStation e o meio ambiente</li>
+                            </ul>
+                            <ul>
+                                <li>Termos de serviço e contrato do usuário</li>
+                                <li>Política de cancelamento da PS ™Store</li>
+                                <li>Avisos sobre saúde</li>
+                                <li>Classificacao</li>
+                                <li>Carreiras</li>
+                                <li>Desenvolvedores</li>
+                                <li>Mapa do Site</li>
+                            </ul>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>YouTube</li>
+                                <li>Instagram</li>
+                                <li>Twitch</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </footer>
+            )
+        }
+
+        function Template() {
+            return (
+                <div>
+                    <Header />
+                    <Main />
+                    <Footer />
+                </div>
+            );
+        }
+
+        let template = <Template />;
+
+        ReactDOM.render(
+            template,
+            document.getElementById('root')
+        )
+
+    </script>
+</body>
+
+</html>

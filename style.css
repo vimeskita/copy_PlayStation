@@ -1,0 +1,155 @@
+/* header-------------------------------------------- */
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+#logo_playstation{
+    max-width: 60px;
+}
+
+form button{
+    border-radius: 20px !important;
+    margin-right: 20px !important;
+}
+form button:hover{
+    background-color: #ccc !important;
+    border: none !important;
+    
+}
+.bi-search{
+    vertical-align: middle;
+}
+nav{
+    position: sticky !important;
+}
+/* header-------------------------------------------- */
+
+/* este mes-------------------------------------------- */
+        .bg-Estemes{
+            background-image: url('./img/bg-estemes.jpg');
+            background-size: cover;
+        }
+
+        .ajuste-card{
+            width: 250px;
+            margin-left: 45px;
+            margin-bottom: 10px;
+        }
+
+        .btn-radius{
+            border-radius: 20px !important;
+        }
+/* este mes-------------------------------------------- */
+  .im{
+      width: 600px !important;
+  }
+  button{
+    border-radius: 30px !important;
+
+  }
+
+  .bg-horizon{
+    background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202010/2915/SqRcyLjZbpK26ej6TnWf43xp.jpg");
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+.row_lancamentos{
+    margin-bottom: 30px;
+}
+  .card_lancamento{
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+  }
+  .card_lancamento:hover{
+    box-shadow: 0 0 1em #BEBCBB;
+      cursor: pointer;
+  }
+
+.bg-info{
+    background-color: #00439C !important;
+  }
+
+  .logo {
+    text-align: right;
+  }
+  /*Borda do card de promoções */
+  .border {
+    border: none !important;
+  }
+  /*Border img de card promoções */
+  #promo img {
+    border-radius: 20px !important;
+  }
+
+  /*Texto do card de promoções */
+  .texto {
+    font-family: 'Arial', sans-serif;
+  }
+
+
+.cinza{
+    height: 400px;
+    width: 100%;
+    background-color: #BEBCBB;
+}
+
+.ajuste{
+    height: 400px;
+}
+
+.ajuste2{
+    height: 70px;
+}
+
+span{
+    color: blue;
+}
+/* ----------------------- */
+#lista_social{ 
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+}
+
+.item_social{
+    text-decoration: none;
+    list-style: none;
+}
+
+ul li img{
+    height: 100px;
+    cursor: pointer;
+}
+
+.rede:hover{
+    transform: translateY(-20px);
+}
+
+h2{
+    font-family: 'Poppins';
+}
+
+footer{
+    background-color: #00439c;
+    color: #fff;
+    padding: 64px 10px;
+    justify-content: space-between;
+}
+footer img{
+    height: 60px;
+    margin: 20px 0 30px;
+}
+.footer_right {
+    margin-left: 90px;
+    padding: 0 30px;
+}
+.footer_right ul{
+    font-size: 14px;
+    list-style: none;
+    width: 200px;
+}
